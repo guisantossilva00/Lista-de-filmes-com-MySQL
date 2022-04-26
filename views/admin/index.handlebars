@@ -1,0 +1,59 @@
+
+<h1>Já assistir</h1>
+<div class="flex flex-start">
+    {{#each assistiu}}
+        <div class="cardfilme">
+            <div class="dentro">
+                <h2>{{titulo}}</h2>
+                <div class="flex">
+                    <img src="{{capa}}" alt="Capa de filmes">
+                    <div class="texto-filme">
+                        <h3>Sinopse</h3>
+                        <p>{{sinopse}}</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Trailer</h2>
+                <iframe width="560" height="315" src="{{trailer}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="texto-filme"> 
+                    <h3>Categorias do filme</h3>
+                    <p>{{categoria}}</p>
+                </div>
+                <a href="/tirar/{{id}}" class="btn btn-outline-warning">Ainda não assistir</a>
+            </div>
+        </div>
+        {{assistiu}}
+    {{/each}}
+</div>
+<h1>Lista de Filmes para assistir</h1>
+<a href="/salvar" class="btn btn-success w-100">Adicionar mais filmes para assistir</a>
+<div class="flex flex-start">
+    {{#each filmes}}
+        <div class="cardfilme">
+            <div class="dentro">
+                <h2>{{titulo}}</h2>
+                <div class="flex">
+                    <img src="{{capa}}" alt="Capa de filmes">
+                    <div class="texto-filme">
+                        <h3>Sinopse</h3>
+                        <p>{{sinopse}}</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Trailer</h2>
+                    <iframe width="560" height="315" src="{{trailer}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="texto-filme"> 
+                    <h3>Categorias do filme</h3>
+                    <p>{{categoria}}</p>
+                </div>
+                <div>
+                    <a href="/assistir/{{id}}" class="btn btn-outline-success">Já assistir</a>
+                    <a href="/deletar/{{id}}" class="btn btn-outline-danger" onclick="return deletar()">Deletar filme da lista</a>
+                </div>
+            </div>
+        </div>
+        {{filmes}}
+    {{/each}}
+</div>

@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+    <form action="/salvar" method="post" name="filme" class="form-cadastro">
+        <h3 class="fw-bold text-danger">Cadastro de filmes</h3>
+        <div>
+            <label class="text-danger" for="titulo">Titulo</label>
+            <input class="form-control" type="text" id="titulo" name="titulo">
+        </div>
+        <div>
+            <label class="text-danger" for="capa">Capa</label>
+            <input class="form-control" type="text" id="capa" name="capa">
+        </div>
+        <div>
+            <label class="text-danger" for="sinopse">Sinopse</label>
+            <textarea class="form-control" name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label class="text-danger" for="trailer">Trailer</label>
+            <input class="form-control" type="text" id="trailer" name="trailer">
+        </div>
+        <div>
+            <label class="text-danger" for="">Categoria</label>
+            <div class="check">
+                <label for="acao">Ação</label>
+                <input type="checkbox" name="categoria" id="acao" value="Ação">
+                <label for="animacao">Animação</label>
+                <input type="checkbox" name="categoria" id="animacao" value="Animação">
+                <label for="aventura">Aventura</label>
+                <input type="checkbox" name="categoria" id="aventura" value="Aventura">
+                <label for="biografico">Biográfico</label>
+                <input type="checkbox" name="categoria" id="biografico" value="Biográfico">
+                <label for="comedia">Comédia</label>
+                <input type="checkbox" name="categoria" id="comedia" value="Comédia">
+                <label for="comedia_dramatica">Comédia dramática</label>
+                <input type="checkbox" name="categoria" id="comedia_dramatica" value="Comédia dramática">
+                <label for="drama">Drama</label>
+                <input type="checkbox" name="categoria" id="drama" value="Drama">
+                <label for="historico">Histórico</label>
+                <input type="checkbox" name="categoria" id="historico" value="Histórico">
+                <label for="fantasia">Fantasia</label>
+                <input type="checkbox" name="categoria" id="fantasia" value="Fantasia">
+                <label for="familia">Familia</label>
+                <input type="checkbox" name="categoria" id="familia" value="familia">
+                <label for="ficacao_cientifica">Ficção científica</label>
+                <input type="checkbox" name="categoria" id="ficacao_cientifica" value="Ficção científica">
+                <label for="musical">Musical</label>
+                <input type="checkbox" name="categoria" id="musical" value="Musical">
+                <label for="policial">Policial</label>
+                <input type="checkbox" name="categoria" id="policial" value="Policial">
+                <label for="romance">Romance</label>
+                <input type="checkbox" name="categoria" id="romance" value="Romance">
+                <label for="terror">Terror</label>
+                <input type="checkbox" name="categoria" id="terror" value="Terror">
+            </div>
+        </div>
+        <div>
+            <input type="submit" class="btn btn-outline-success w-100" value="Salvar">
+            <input type="reset" class="btn btn-outline-warning w-100" value="Limpar">
+        </div>
+    </form>
+</div>

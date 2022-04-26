@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+label{
+    color: white;
+}
+h3{
+   color: white;
+}
+body {
+    background-color: rgb(32, 32, 32) !important;
+}
+.login {
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-start{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.fundo-login{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/inventariofundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cadastro{
+    height: 100vh;
+}
+
+.fundo-cadastro{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/cadastrofundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    color: red;
+}
+h2{
+    color: white;
+    margin: 10px 0;
+}
+.cardfilme{
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.cardfilme::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg, rgb(255, 0, 0), rgb(255, 90, 0), rgb(255, 180, 0),rgb(255, 255, 0), rgb(255, 90, 0), rgb(255, 0, 0));
+    background-size: 50% 100%;
+    border-radius: inherit;
+}
+.cardfilme:hover::before{
+    animation: borda 0.75s linear infinite;
+}
+.dentro{
+    display: block;
+    background-color: rgb(32, 32, 32) !important;
+    width: 600px;
+    height: 98%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 6px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@keyframes borda {
+    to {
+        transform: translateX(-50%);
+    }
+}
+.cardfilme img{
+    width: 150px;
+}
+.texto-filme{
+    margin: 10px 10px;
+}
+.cardfilme .texto-filme h3{
+    color: white;
+}
+.cardfilme .texto-filme  p{
+    color: white;
+    margin: 10px 0;
+}
+.form-cadastro{
+    width: 70%;
+}
+.form-cadastro div{
+    margin: 5px 0;
+}
+
+.form-cadastro input[type=text], .form-cadastro textarea{
+    background-color: rgb(251, 67, 67);
+    color: white;
+}
+.form-cadastro input[type=text]:focus, .form-cadastro textarea:focus{
+    background-color: rgb(251, 67, 67);
+    color: white;
+}
+.form-cadastro input[type=submit], .form-cadastro input[type=reset]{
+    margin: 5px 0   ;
+}
+.check label{
+    cursor: pointer;
+    margin: 5px;
+    color: red;
+}
+.check{
+    cursor: pointer;
+    color: aqua;
+    accent-color: red;
+}
